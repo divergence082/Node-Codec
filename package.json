@@ -16,7 +16,7 @@
     "compile": "node ./build.js compile",
     "test": "node ./test/codec/codec.js",
     "build": "npm run lint && npm run check && npm run compile",
-    "prepublish": "npm run build"
+    "prepublish": "npm run compile"
   },
   "closure-compiler": {
     "path": "/usr/lib/closure-compiler/closure-compiler.jar",
