@@ -22,6 +22,7 @@ var output = '' +
     'c=' + encodeURIComponent('[1,2,3]');
 
 
+console.log(output);
 cases.push(yaa.assert.outputDeepEquals(
     yaa.insert(codec.form.encode(input)),
     yaa.insert(output),

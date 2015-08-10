@@ -23,7 +23,8 @@
     "externs": [
       "externs/querystring.js",
       "externs/buffer.js",
-      "externs/console.js"
+      "externs/console.js",
+      "externs/url.js"
     ],
     "flags": [
       "--warning_level=VERBOSE",

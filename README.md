@@ -9,6 +9,8 @@ Encodes and decodes strings into different formats.
 - [forms](#forms)
 - [base64](#base64)
 - [cookies](#cookies)
+- [url](#url)
+
 
 ### <a name="json"></a>JSON
 
@@ -85,5 +87,32 @@ codec.cookies.encode(cookie);  // cookieString
 
 // decode cookie string to cookie object
 codec.cookies.decode(cookieString);  // cookie
+
+```
+
+### <a name="url"></a>Url
+
+```javascript
+var codec = require('codec');
+var urlString = '//host.name:8080/path?key=value';
+var urlObject = {
+  'protocol': null,
+  'slashes': true,
+  'auth': null,
+  'host': 'host.name:8080',
+  'port': '8080',
+  'hostname': 'host.name',
+  'hash': null,
+  'search': '?key=value',
+  'query': {
+    'key': 'value'
+  },
+  'pathname': '/path',
+  'path': '/path?key=value',
+  'href': '//host.name:8080/path?key=value'
+};
+
+// decode url (with or without protocol) to url object
+codec.cookies.decode(urlString);    // urlObject
 
 ```

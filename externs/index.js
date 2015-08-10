@@ -31,6 +31,12 @@ codec.base64 = {};
 
 
 /**
+ * @namespace
+ */
+codec.url = {};
+
+
+/**
  * @param {string} string
  * @return {string}
  */
@@ -184,3 +190,10 @@ codec.json.encode = function(data) {};
  * @return {?Object}
  */
 codec.json.decode = function(string) {};
+
+
+/**
+ * @param {string} urlString
+ * @return {!url.URL}
+ */
+codec.url.decode = function(urlString) {};

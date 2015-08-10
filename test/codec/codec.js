@@ -8,7 +8,8 @@ var tests = [
   require('./base64/base64.js'),
   require('./json/json.js'),
   require('./cookies/cookies.js'),
-  require('./form/form.js')
+  require('./form/form.js'),
+  require('./url/url.js')
 ];
 
 
