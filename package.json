@@ -1,6 +1,6 @@
 {
   "name": "codec",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "bin/index.js",
   "description": "Codec for strings",
   "repository": {
@@ -16,7 +16,7 @@
     "compile": "node ./build.js compile",
     "test": "node ./test/codec/codec.js",
     "build": "npm run lint && npm run check && npm run compile",
-    "prepublish": "npm run build && npm run test"
+    "prepublish": "npm run build"
   },
   "closure-compiler": {
     "path": "/usr/lib/closure-compiler/closure-compiler.jar",
