@@ -2,6 +2,11 @@
   "name": "codec",
   "version": "0.0.1",
   "main": "bin/index.js",
+  "description": "Codec for strings",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divergence082/Node-Codec"
+  },
   "devDependencies": {
     "yaa": "0.0.1"
   },
@@ -26,9 +31,5 @@
       "--jscomp_error=checkTypes",
       "--jscomp_error=suspiciousCode"
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/divergence082/Node-Codec"
   }
 }
