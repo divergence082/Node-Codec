@@ -1,6 +1,6 @@
 {
   "name": "codec",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "bin/index.js",
   "description": "Codec for strings",
   "repository": {
