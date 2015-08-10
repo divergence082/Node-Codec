@@ -4,7 +4,7 @@ Codec for strings
 
 Encodes and decodes strings into different formats.
 
-Available formats:
+#### Available formats:
 - [json](#json)
 - [forms](#forms)
 - [base64](#base64)
