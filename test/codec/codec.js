@@ -1,5 +1,6 @@
 
 
+console.info('[TEST] IN PROGRESS');
 var yaa = require('yaa');
 
 
@@ -15,7 +16,10 @@ var tests = [
  * @param {number} code
  */
 function complete(code) {
+  var message = code === 0 ? 'SUCCEEDED' : 'FAILED';
+  console.info('[TEST] ' + message);
   process.exit(code);
 }
+
 
 yaa.sequence(tests).call(null, complete, complete);
