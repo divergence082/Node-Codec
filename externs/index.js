@@ -31,8 +31,8 @@ codec.base64 = {};
 
 
 /**
- * @param {string} string Строка.
- * @return {string} Закодированная строка.
+ * @param {string} string
+ * @return {string}
  */
 codec.base64.encode = function(string) {};
 
@@ -42,20 +42,6 @@ codec.base64.encode = function(string) {};
  * @return {string}
  */
 codec.base64.decode = function(string) {};
-
-
-/**
- * @param {!codec.cookies.Cookie} cookie
- * @return {string}
- */
-codec.cookies.encode = function(cookie) {};
-
-
-/**
- * @param {string} string
- * @return {?codec.cookies.Cookie}
- */
-codec.cookies.decode = function(string) {};
 
 
 /**
@@ -155,19 +141,21 @@ codec.cookies.Cookie.prototype.makeHttpOnly = function() {};
 /**
  * @return {string}
  */
-codec.cookies.Cookie.prototype.getExtension = function() {};
+codec.cookies.Cookie.prototype.toString = function() {};
 
 
 /**
- * @param {string} extension
- */
-codec.cookies.Cookie.prototype.setExtension = function(extension) {};
-
-
-/**
+ * @param {!codec.cookies.Cookie} cookie
  * @return {string}
  */
-codec.cookies.Cookie.prototype.toString = function() {};
+codec.cookies.encode = function(cookie) {};
+
+
+/**
+ * @param {string} string
+ * @return {?codec.cookies.Cookie}
+ */
+codec.cookies.decode = function(string) {};
 
 
 /**
