@@ -1,0 +1,33 @@
+{
+  "name": "codec",
+  "version": "0.0.1",
+  "main": "bin/index.js",
+  "devDependencies": {
+    "yaa": "0.0.1"
+  },
+  "scripts": {
+    "clear": "rm -rf bin node_modules && npm i",
+    "lint": "node ./build.js lint",
+    "check": "node ./build.js check",
+    "compile": "node ./build.js compile",
+    "build": "npm run clear && npm run compile"
+  },
+  "closure-compiler": {
+    "path": "/usr/lib/closure-compiler/closure-compiler.jar",
+    "externs": [
+      "externs/querystring.js",
+      "externs/buffer.js",
+      "externs/console.js"
+    ],
+    "flags": [
+      "--warning_level=VERBOSE",
+      "--language_in=ECMASCRIPT5_STRICT",
+      "--jscomp_error=checkTypes",
+      "--jscomp_error=suspiciousCode"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divergence082/Node-Codec"
+  }
+}
